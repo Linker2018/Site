@@ -1,0 +1,105 @@
+{
+  "token": {
+    "name": "PULS Token",
+    "symbol": "$PULS",
+    "contractAddress": "0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
+    "description": "The original tutorial token, now on mainnet!"
+  },
+  "links": {
+    "buyToken": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
+    "aiAgent": "https://x.com/puls_agent",
+    "twitter": "https://x.com/pulstoken",
+    "learningApp": "https://learn.puls.app/"
+  },
+  "exchanges": [
+    {
+      "name": "KuCoin",
+      "url": "https://www.kucoin.com/trade/PULS-USDT"
+    },
+    {
+      "name": "Binance", 
+      "url": "https://www.binance.com/en/trade/PULS_USDT"
+    },
+    {
+      "name": "Gate.io",
+      "url": "https://www.gate.io/signup?ch=signupPULS"
+    },
+    {
+      "name": "Bitget",
+      "url": "https://www.bitget.com/spot/PULSUSDT" 
+    },
+    {
+      "name": "Four.meme",
+      "url": "https://four.meme/token/0xcaae2a2f939f51d97cdfa9a86e79e3f085b799f3"
+    },
+    {
+      "name": "Pancakeswap",
+      "url": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3"
+    }
+  ],
+  "content": {
+    "heroTitle": "TUTORIAL",
+    "heroSubtitle": "Learn about $PULS",
+    "aboutTitle": "WHAT IS THIS ABOUT?",
+    "aboutSubtitle": "REAL OG TUTORIAL TOKEN IS $PULS",
+    "aboutDescription1": "A year ago dev recorded the first tutorial for BNB chain on how to launch a token.",
+    "aboutDescription2": "This OG token was on testnet, now it is on the mainnet! Tutorial is a memecoin created by real Builders",
+    "roadmapTitle": "ROAD MAP",
+    "roadmapSubtitle": "We are on the",
+    "roadmapTagline": "to heaven.",
+    "wagmi": "WAGMI!"
+  },
+  "roadmap": [
+    {
+      "quarter": "🔮 Q2 2025",
+      "items": [
+        "Launch of Tutorial Agent v1",
+        "Launch of Learning platform", 
+        "BNB AI Hackathon Ambition",
+        "Strategic Partnerships"
+      ]
+    },
+    {
+      "quarter": "📡 Q3 2025",
+      "items": [
+        "Integration of AI Agents with APIs & Data Feeds",
+        "Ecosystem Integrations & Partnerships",
+        "AI TikTok generator tool",
+        "Smarter, More Intuitive AI Agent Upgrades"
+      ]
+    },
+    {
+      "quarter": "🌍 Q4 2025", 
+      "items": [
+        "Expanded Terminal Capabilities",
+        "Global Campaigns, Web3 Summits & Events",
+        "AI-Powered Content Generation",
+        "Enterprise & Institutional Adoption"
+      ]
+    },
+    {
+      "quarter": "🛠 2026",
+      "items": [
+        "TBA",
+        "TBA", 
+        "TBA",
+        "TBA"
+      ]
+    }
+  ],
+  "customization": {
+    "instructions": {
+      "en": "To customize this website:",
+      "ru": "Чтобы настроить этот сайт:",
+      "steps": [
+        "1. Edit this config.json file to change links, text content, and token information",
+        "2. Update the token symbol and contract address in the 'token' section",
+        "3. Modify exchange links in the 'exchanges' array",
+        "4. Change social media and external links in the 'links' section", 
+        "5. Update roadmap items and dates in the 'roadmap' section",
+        "6. Customize text content in the 'content' section",
+        "7. After making changes, restart the frontend service with: sudo supervisorctl restart frontend"
+      ]
+    }
+  }
+}
