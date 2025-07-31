@@ -1,0 +1,38 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+app = FastAPI(title="$PULS Token API", description="API for $PULS Token website")
+
+# CORS configuration
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/api/health")
+async def health_check():
+    return {"status": "healthy", "message": "$PULS Token API is running"}
+
+@app.get("/api/token-info")
+async def get_token_info():
+    return {
+        "name": "PULS Token",
+        "symbol": "$PULS",
+        "description": "The original tutorial token, now on mainnet!",
+        "contract_address": "0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3"
+    }
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to $PULS Token API"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8001)
