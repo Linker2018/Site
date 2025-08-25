@@ -1,7 +1,8 @@
-/* Additional custom styles for the $PULS Token website */
+/* Additional custom styles for Pulsar Finance */
 
 .App {
   text-align: left;
+  position: relative;
 }
 
 /* Smooth scrolling behavior */
@@ -9,71 +10,154 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom gradient backgrounds */
-.gradient-bg {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+/* Metallic gradient backgrounds */
+.gradient-bg-metallic {
+  background: linear-gradient(135deg, #CD7F32 0%, #FFD700 50%, #C0C0C0 100%);
 }
 
-/* Enhanced button hover effects */
+/* Enhanced button hover effects with metallic shine */
 .btn-primary:hover {
-  box-shadow: 0 0 30px rgba(245, 158, 11, 0.5);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5), 0 0 60px rgba(205, 127, 50, 0.3);
+  background-size: 200% 200%;
+  animation: goldShimmer 0.6s ease-in-out;
 }
 
 .btn-secondary:hover {
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(192, 192, 192, 0.2);
 }
 
-/* Glowing text effect */
+/* Enhanced glowing text effect */
 .glow-text {
-  background: linear-gradient(45deg, #f59e0b, #ea580c, #ec4899, #7c3aed);
+  background: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0, #FFD700, #CD7F32);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradient-shift 3s ease infinite;
+  animation: metallicShift 4s ease infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
 }
 
-@keyframes gradient-shift {
+@keyframes metallicShift {
   0%, 100% {
     background-position: 0% 50%;
   }
-  50% {
+  25% {
     background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
   }
 }
 
-/* Card hover effects */
-.exchange-card {
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Card hover effects with metallic shine */
+.exchange-card, .roadmap-card {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.exchange-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* Video player styling */
-.video-container {
   position: relative;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  border-radius: 12px;
   overflow: hidden;
 }
 
-/* Roadmap animations */
-.roadmap-card {
-  transition: all 0.3s ease;
+.exchange-card::before, .roadmap-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 215, 0, 0.1) 50%,
+    transparent 70%
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s;
+  opacity: 0;
 }
 
-.roadmap-card:hover {
+.exchange-card:hover::before, .roadmap-card:hover::before {
+  animation: shimmerSweep 1.5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.exchange-card:hover, .roadmap-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 25px 50px rgba(245, 158, 11, 0.1);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(255, 215, 0, 0.2),
+    inset 0 1px 0 rgba(255, 215, 0, 0.1);
 }
 
-/* Loading states */
+/* Metallic borders */
+.metallic-border {
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0, #FFD700, #CD7F32) 1;
+  animation: borderShimmer 3s linear infinite;
+}
+
+@keyframes borderShimmer {
+  0% {
+    border-image-source: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0, #FFD700, #CD7F32);
+  }
+  25% {
+    border-image-source: linear-gradient(45deg, #FFD700, #C0C0C0, #CD7F32, #FFD700, #C0C0C0);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #C0C0C0, #CD7F32, #FFD700, #C0C0C0, #CD7F32);
+  }
+  75% {
+    border-image-source: linear-gradient(45deg, #FFD700, #CD7F32, #C0C0C0, #FFD700, #CD7F32);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0, #FFD700, #CD7F32);
+  }
+}
+
+/* Loading states with metallic effect */
 .loading {
   opacity: 0.7;
   pointer-events: none;
+  position: relative;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+  animation: loadingShimmer 1.5s infinite;
+}
+
+@keyframes loadingShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Responsive text scaling */
@@ -89,75 +173,49 @@ html {
   }
 }
 
-/* Copy button animation */
+/* Copy button animation with metallic feedback */
 .copy-success {
-  animation: copy-pulse 0.3s ease-in-out;
+  animation: copyPulseMetallic 0.4s ease-in-out;
 }
 
-@keyframes copy-pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-
-/* Particle effect for background */
-.particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.particle {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: rgba(245, 158, 11, 0.3);
-  border-radius: 50%;
-  animation: float 15s infinite linear;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(100vh) translateX(0);
-    opacity: 0;
+@keyframes copyPulseMetallic {
+  0% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.7);
   }
-  10% {
-    opacity: 1;
+  50% { 
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
   }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-10vh) translateX(100px);
-    opacity: 0;
+  100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.7);
   }
 }
 
 /* Enhanced focus states for accessibility */
 button:focus,
 a:focus {
-  outline: 2px solid #f59e0b;
+  outline: 2px solid #FFD700;
   outline-offset: 2px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-/* Dark theme scrollbar */
+/* Metallic scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: linear-gradient(180deg, #1a1a1a, #2d1810);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4a4a4a;
-  border-radius: 4px;
+  background: linear-gradient(180deg, #CD7F32, #FFD700, #C0C0C0);
+  border-radius: 6px;
+  border: 2px solid #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6a6a6a;
+  background: linear-gradient(180deg, #FFD700, #C0C0C0, #CD7F32);
 }
