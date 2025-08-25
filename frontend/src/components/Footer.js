@@ -88,11 +88,11 @@ const Footer = () => {
                 href={config.links.telegramBot}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-full"
+                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-xl"
                 title="Telegram Bot"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <path d="M9.78 1.63l-.28.1A12.05 12.05 0 0 0 1.73 9.5a12.05 12.05 0 0 0 7.77 7.77l.28.1.28-.1A12.05 12.05 0 0 0 17.83 9.5a12.05 12.05 0 0 0-7.77-7.77L9.78 1.63zM12 5c.83 0 1.5.67 1.5 1.5S12.83 8 12 8s-1.5-.67-1.5-1.5S11.17 5 12 5zm0 4c1.1 0 2 .9 2 2v6c0 1.1-.9 2-2 2s-2-.9-2-2v-6c0-1.1.9-2 2-2z"/>
                 </svg>
               </a>
               
