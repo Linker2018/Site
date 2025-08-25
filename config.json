@@ -64,11 +64,10 @@
       "steps": [
         "1. Edit this config.json file to change links, text content, and token information",
         "2. Update the token symbol and contract address in the 'token' section",
-        "3. Modify exchange links in the 'exchanges' array",
-        "4. Change social media and external links in the 'links' section", 
-        "5. Update roadmap items and dates in the 'roadmap' section",
-        "6. Customize text content in the 'content' section",
-        "7. After making changes, restart the frontend service with: sudo supervisorctl restart frontend"
+        "3. Modify social media links in the 'links' section", 
+        "4. Change about content and roadmap items",
+        "5. Update exchange links if needed",
+        "6. After making changes, restart the frontend service with: sudo supervisorctl restart frontend"
       ]
     }
   }
