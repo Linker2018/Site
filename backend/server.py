@@ -18,7 +18,7 @@ app.add_middleware(
 
 @app.get("/api/health")
 async def health_check():
-    return {"status": "healthy", "message": "$PULS Token API is running"}
+    return {"status": "healthy", "message": "Pulsar Finance API is running"}
 
 @app.get("/api/token-info")
 async def get_token_info():
