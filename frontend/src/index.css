@@ -89,19 +89,20 @@ body::before {
 
 @layer components {
   .btn-primary {
-    @apply bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 text-black font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    @apply bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 text-black font-bold py-3 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
     background-size: 200% 200%;
     animation: goldShimmer 3s ease-in-out infinite;
   }
   
   .btn-secondary {
-    @apply bg-transparent border-2 text-transparent bg-clip-text font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105;
+    @apply bg-transparent border-2 text-transparent bg-clip-text font-bold py-3 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105;
     background: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     border: 2px solid;
     border-image: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0) 1;
+    border-radius: 1rem;
   }
   
   .btn-secondary:hover {
