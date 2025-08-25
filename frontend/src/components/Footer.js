@@ -64,11 +64,11 @@ const Footer = () => {
                 href={config.links.telegramGroup}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-xl"
+                className="text-gray-400 hover:text-crypto-gold transition-all duration-300 p-3 bg-gray-800 hover:bg-gray-700 rounded-full transform hover:scale-110"
                 title="Telegram Group"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-.962 6.502-.448 1.645-.9 2.87-2.34.45l-.9-.83c-.194-.02-.369-.053-.542-.1-.47-.131-.94-.26-1.41-.39-.94-.26-1.88-.52-2.82-.78-.47-.13-.94-.26-1.41-.39l-.9-.83c-1.44-2.42-.892-1.195-.44.45 0 0-.783-4.604-.962-6.502-.016-.166.004-.38.02-.472a.506.506 0 0 1 .17-.325c.145-.117.366-.142.466-.14zm-5.407 2.198c-.872.199-.87.197-.87.197-.002-.001.18-.204.87-.197z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.54 7.26c-.11.5-.4.62-.81.39l-2.25-1.66-1.08 1.04c-.12.12-.22.22-.45.22l.16-2.26 4.13-3.73c.18-.16-.04-.25-.28-.09l-5.1 3.21-2.2-.69c-.48-.15-.49-.48.1-.71l8.6-3.32c.4-.15.75.09.62.69z"/>
                 </svg>
               </a>
               
@@ -76,7 +76,7 @@ const Footer = () => {
                 href={config.links.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-xl"
+                className="text-gray-400 hover:text-crypto-gold transition-all duration-300 p-3 bg-gray-800 hover:bg-gray-700 rounded-full transform hover:scale-110"
                 title="Twitter/X"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -88,11 +88,11 @@ const Footer = () => {
                 href={config.links.telegramBot}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-xl"
+                className="text-gray-400 hover:text-crypto-gold transition-all duration-300 p-3 bg-gray-800 hover:bg-gray-700 rounded-full transform hover:scale-110"
                 title="Telegram Bot"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9.78 1.63l-.28.1A12.05 12.05 0 0 0 1.73 9.5a12.05 12.05 0 0 0 7.77 7.77l.28.1.28-.1A12.05 12.05 0 0 0 17.83 9.5a12.05 12.05 0 0 0-7.77-7.77L9.78 1.63zM12 5c.83 0 1.5.67 1.5 1.5S12.83 8 12 8s-1.5-.67-1.5-1.5S11.17 5 12 5zm0 4c1.1 0 2 .9 2 2v6c0 1.1-.9 2-2 2s-2-.9-2-2v-6c0-1.1.9-2 2-2z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.54 7.26c-.11.5-.4.62-.81.39l-2.25-1.66-1.08 1.04c-.12.12-.22.22-.45.22l.16-2.26 4.13-3.73c.18-.16-.04-.25-.28-.09l-5.1 3.21-2.2-.69c-.48-.15-.49-.48.1-.71l8.6-3.32c.4-.15.75.09.62.69z"/>
                 </svg>
               </a>
               
@@ -100,7 +100,7 @@ const Footer = () => {
                 href={config.links.whitePaper}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-full"
+                className="text-gray-400 hover:text-crypto-gold transition-all duration-300 p-3 bg-gray-800 hover:bg-gray-700 rounded-full transform hover:scale-110"
                 title="Whitepaper"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
