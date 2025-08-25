@@ -55,25 +55,25 @@ const AboutSection = () => {
           
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-900/70 rounded-lg p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-colors">
+            <div className="bg-gray-900/70 rounded-2xl p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-all duration-300 transform hover:scale-105">
               <div className="text-crypto-gold text-3xl mb-4">🤖</div>
               <h4 className="font-bold text-white mb-2">Telegram Bot</h4>
               <p className="text-gray-400 text-sm">Easy staking and asset management through our Telegram bot</p>
             </div>
             
-            <div className="bg-gray-900/70 rounded-lg p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-colors">
+            <div className="bg-gray-900/70 rounded-2xl p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-all duration-300 transform hover:scale-105">
               <div className="text-crypto-gold text-3xl mb-4">💎</div>
               <h4 className="font-bold text-white mb-2">NFT Bonuses</h4>
               <p className="text-gray-400 text-sm">Exclusive NFTs boost earnings and grant special privileges</p>
             </div>
             
-            <div className="bg-gray-900/70 rounded-lg p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-colors">
+            <div className="bg-gray-900/70 rounded-2xl p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-all duration-300 transform hover:scale-105">
               <div className="text-crypto-gold text-3xl mb-4">📈</div>
               <h4 className="font-bold text-white mb-2">High APY</h4>
               <p className="text-gray-400 text-sm">Up to 360% annual percentage yield for stakers</p>
             </div>
             
-            <div className="bg-gray-900/70 rounded-lg p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-colors">
+            <div className="bg-gray-900/70 rounded-2xl p-6 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-all duration-300 transform hover:scale-105">
               <div className="text-crypto-gold text-3xl mb-4">🔗</div>
               <h4 className="font-bold text-white mb-2">DeFi 2.0</h4>
               <p className="text-gray-400 text-sm">Next-generation DeFi with gamification and multi-tier rewards</p>

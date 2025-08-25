@@ -32,7 +32,7 @@ const RoadmapSection = () => {
           {config.roadmap.map((phase, index) => (
             <div 
               key={index} 
-              className="bg-gray-900/70 rounded-lg p-8 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+              className="bg-gray-900/70 rounded-2xl p-8 backdrop-blur-sm border border-gray-700 hover:border-crypto-gold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             >
               <h4 className="font-bold text-2xl mb-6 glow-text text-center">{phase.quarter}</h4>
               <ul className="space-y-4">
@@ -48,7 +48,7 @@ const RoadmapSection = () => {
         </div>
         
         <div className="text-center mt-16">
-          <div className="bg-gray-900/70 rounded-lg p-6 max-w-md mx-auto backdrop-blur-sm border border-gray-700">
+          <div className="bg-gray-900/70 rounded-2xl p-6 max-w-md mx-auto backdrop-blur-sm border border-gray-700">
             <h4 className="text-xl font-bold glow-text mb-3">Join Our Journey</h4>
             <p className="text-gray-300 mb-4">Be part of the DeFi 2.0 revolution</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -56,7 +56,7 @@ const RoadmapSection = () => {
                 href={config.links.telegramGroup}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-sm px-4 py-2"
+                className="btn-secondary text-sm px-6 py-3"
               >
                 Join Community
               </a>
@@ -64,7 +64,7 @@ const RoadmapSection = () => {
                 href={config.links.telegramBot}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary text-sm px-4 py-2"
+                className="btn-primary text-sm px-6 py-3"
               >
                 Start Staking
               </a>
