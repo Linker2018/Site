@@ -1,0 +1,74 @@
+{
+  "token": {
+    "name": "Pulsar Finance",
+    "symbol": "$PULS",
+    "contractAddress": "0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
+    "description": "A promising Web3 project combining tokenized economics and NFT technologies with innovative staking via Telegram bot."
+  },
+  "links": {
+    "buyToken": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
+    "telegramGroup": "https://t.me/+XOGqCwsOrK80NDM0",
+    "telegramBot": "https://t.me/Pulsar_FinanceBot",
+    "twitter": "https://x.com/Pulsar__Finance?t=hTrHQqwbhKw7EAlkDsfDOg&s=09",
+    "whitePaper": "https://pulsar-5.gitbook.io/pulsar/"
+  },
+  "exchanges": [
+    {
+      "name": "PancakeSwap",
+      "url": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3"
+    }
+  ],
+  "content": {
+    "heroTitle": "PULSAR",
+    "heroSubtitle": "Innovative Web3 & DeFi 2.0",
+    "aboutTitle": "WHAT IS THIS ABOUT?",
+    "aboutSubtitle": "PULSAR FINANCE ECOSYSTEM",
+    "aboutDescription": "Pulsar is a promising Web3 project that combines the advantages of tokenized economics and NFT technologies. The ecosystem is built around a BEP-20 standard token, enabling seamless transactions and integration with DeFi tools. Pulsar's standout feature is its innovative staking model via a Telegram bot, making passive income generation effortless and accessible even for crypto beginners.\n\nThe project offers investors attractive opportunities, including a presale price of $0.05 per token and high annual yields of up to 360% APY. Long-term holders also receive exclusive NFT bonuses that boost their earnings and grant additional privileges within the ecosystem. Pulsar merges the reliability of Binance Smart Chain (BSC) with cutting-edge approaches like gamification and a multi-tiered reward system.\n\nThrough the Telegram bot, users can easily manage their assets, participate in staking, and track returns in real time. Pulsar aims to become a leading project in the DeFi 2.0 space, offering users not only high profitability but also a user-friendly, technologically advanced product.",
+    "roadmapTitle": "ROAD MAP",
+    "roadmapSubtitle": "Our Development",
+    "roadmapTagline": "Journey to DeFi 2.0"
+  },
+  "roadmap": [
+    {
+      "quarter": "🚀 Q3 2025",
+      "items": [
+        "Presale Launch",
+        "Telegram Bot Development", 
+        "Smart Contract Deployment",
+        "Community Building"
+      ]
+    },
+    {
+      "quarter": "📈 Q4 2025",
+      "items": [
+        "DEX Listing",
+        "Staking Platform Launch",
+        "NFT Bonus System",
+        "Partnership Expansion"
+      ]
+    },
+    {
+      "quarter": "🏛️ 2026",
+      "items": [
+        "DAO Development",
+        "Governance Token Launch",
+        "Cross-chain Integration", 
+        "Enterprise Adoption"
+      ]
+    }
+  ],
+  "customization": {
+    "instructions": {
+      "en": "To customize this website:",
+      "ru": "Чтобы настроить этот сайт:",
+      "steps": [
+        "1. Edit this config.json file to change links, text content, and token information",
+        "2. Update the token symbol and contract address in the 'token' section",
+        "3. Modify social media links in the 'links' section", 
+        "4. Change about content and roadmap items",
+        "5. Update exchange links if needed",
+        "6. After making changes, restart the frontend service with: sudo supervisorctl restart frontend"
+      ]
+    }
+  }
+}
