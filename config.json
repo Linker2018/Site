@@ -2,11 +2,11 @@
   "token": {
     "name": "Pulsar Finance",
     "symbol": "$PULS",
-    "contractAddress": "0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
+    "contractAddress": "Coming Soon",
     "description": "A promising Web3 project combining tokenized economics and NFT technologies with innovative staking via Telegram bot."
   },
   "links": {
-    "buyToken": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
+    "buyToken": "https://pancakeswap.finance/home",
     "telegramGroup": "https://t.me/+XOGqCwsOrK80NDM0",
     "telegramBot": "https://t.me/Pulsar_FinanceBot",
     "twitter": "https://x.com/Pulsar__Finance?t=hTrHQqwbhKw7EAlkDsfDOg&s=09",
@@ -15,7 +15,7 @@
   "exchanges": [
     {
       "name": "PancakeSwap",
-      "url": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3"
+      "url": "https://pancakeswap.finance/home"
     }
   ],
   "content": {
