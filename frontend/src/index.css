@@ -95,18 +95,41 @@ body::before {
   }
   
   .btn-secondary {
-    @apply bg-transparent border-2 text-transparent bg-clip-text font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105;
-    background: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    border: 2px solid;
-    border-image: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0) 1;
+    @apply bg-transparent font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 relative overflow-hidden;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+  }
+  
+  .btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0, #FFD700, #CD7F32);
+    background-size: 300% 300%;
+    border-radius: inherit;
+    z-index: -1;
+    animation: borderShimmer 3s linear infinite;
+  }
+  
+  .btn-secondary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border-radius: inherit;
+    z-index: -1;
   }
   
   .btn-secondary:hover {
-    @apply bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 text-black;
-    -webkit-text-fill-color: black;
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
   }
   
   .glow-text {
