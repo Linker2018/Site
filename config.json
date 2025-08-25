@@ -1,89 +1,59 @@
 {
   "token": {
-    "name": "PULS Token",
+    "name": "Pulsar Finance",
     "symbol": "$PULS",
     "contractAddress": "0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
-    "description": "The original tutorial token, now on mainnet!"
+    "description": "A promising Web3 project combining tokenized economics and NFT technologies with innovative staking via Telegram bot."
   },
   "links": {
     "buyToken": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3",
-    "aiAgent": "https://x.com/puls_agent",
-    "twitter": "https://x.com/pulstoken",
-    "learningApp": "https://learn.puls.app/"
+    "telegramGroup": "https://t.me/+XOGqCwsOrK80NDM0",
+    "telegramBot": "https://t.me/Pulsar_FinanceBot",
+    "twitter": "https://x.com/Pulsar__Finance?t=hTrHQqwbhKw7EAlkDsfDOg&s=09",
+    "whitePaper": "https://pulsar-5.gitbook.io/pulsar/"
   },
   "exchanges": [
     {
-      "name": "KuCoin",
-      "url": "https://www.kucoin.com/trade/PULS-USDT"
-    },
-    {
-      "name": "Binance", 
-      "url": "https://www.binance.com/en/trade/PULS_USDT"
-    },
-    {
-      "name": "Gate.io",
-      "url": "https://www.gate.io/signup?ch=signupPULS"
-    },
-    {
-      "name": "Bitget",
-      "url": "https://www.bitget.com/spot/PULSUSDT" 
-    },
-    {
-      "name": "Four.meme",
-      "url": "https://four.meme/token/0xcaae2a2f939f51d97cdfa9a86e79e3f085b799f3"
-    },
-    {
-      "name": "Pancakeswap",
+      "name": "PancakeSwap",
       "url": "https://pancakeswap.finance/?outputCurrency=0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3"
     }
   ],
   "content": {
-    "heroTitle": "TUTORIAL",
-    "heroSubtitle": "Learn about $PULS",
+    "heroTitle": "PULSAR",
+    "heroSubtitle": "Innovative Web3 & DeFi 2.0",
     "aboutTitle": "WHAT IS THIS ABOUT?",
-    "aboutSubtitle": "REAL OG TUTORIAL TOKEN IS $PULS",
-    "aboutDescription1": "A year ago dev recorded the first tutorial for BNB chain on how to launch a token.",
-    "aboutDescription2": "This OG token was on testnet, now it is on the mainnet! Tutorial is a memecoin created by real Builders",
+    "aboutSubtitle": "PULSAR FINANCE ECOSYSTEM",
+    "aboutDescription": "Pulsar is a promising Web3 project that combines the advantages of tokenized economics and NFT technologies. The ecosystem is built around a BEP-20 standard token, enabling seamless transactions and integration with DeFi tools. Pulsar's standout feature is its innovative staking model via a Telegram bot, making passive income generation effortless and accessible even for crypto beginners.\n\nThe project offers investors attractive opportunities, including a presale price of $0.05 per token and high annual yields of up to 360% APY. Long-term holders also receive exclusive NFT bonuses that boost their earnings and grant additional privileges within the ecosystem. Pulsar merges the reliability of Binance Smart Chain (BSC) with cutting-edge approaches like gamification and a multi-tiered reward system.\n\nThrough the Telegram bot, users can easily manage their assets, participate in staking, and track returns in real time. Pulsar aims to become a leading project in the DeFi 2.0 space, offering users not only high profitability but also a user-friendly, technologically advanced product.",
     "roadmapTitle": "ROAD MAP",
-    "roadmapSubtitle": "We are on the",
-    "roadmapTagline": "to heaven.",
-    "wagmi": "WAGMI!"
+    "roadmapSubtitle": "Our Development",
+    "roadmapTagline": "Journey to DeFi 2.0"
   },
   "roadmap": [
     {
-      "quarter": "🔮 Q2 2025",
+      "quarter": "🚀 Q3 2025",
       "items": [
-        "Launch of Tutorial Agent v1",
-        "Launch of Learning platform", 
-        "BNB AI Hackathon Ambition",
-        "Strategic Partnerships"
+        "Presale Launch",
+        "Telegram Bot Development", 
+        "Smart Contract Deployment",
+        "Community Building"
       ]
     },
     {
-      "quarter": "📡 Q3 2025",
+      "quarter": "📈 Q4 2025",
       "items": [
-        "Integration of AI Agents with APIs & Data Feeds",
-        "Ecosystem Integrations & Partnerships",
-        "AI TikTok generator tool",
-        "Smarter, More Intuitive AI Agent Upgrades"
+        "DEX Listing",
+        "Staking Platform Launch",
+        "NFT Bonus System",
+        "Partnership Expansion"
       ]
     },
     {
-      "quarter": "🌍 Q4 2025", 
+      "quarter": "🏛️ 2026",
       "items": [
-        "Expanded Terminal Capabilities",
-        "Global Campaigns, Web3 Summits & Events",
-        "AI-Powered Content Generation",
-        "Enterprise & Institutional Adoption"
-      ]
-    },
-    {
-      "quarter": "🛠 2026",
-      "items": [
-        "TBA",
-        "TBA", 
-        "TBA",
-        "TBA"
+        "DAO Development",
+        "Governance Token Launch",
+        "Cross-chain Integration", 
+        "Enterprise Adoption"
       ]
     }
   ],
