@@ -8,7 +8,22 @@
   }
   
   body {
-    @apply bg-black text-white overflow-x-hidden;
+    @apply text-white overflow-x-hidden;
+    background: linear-gradient(135deg, 
+      #0f0f0f 0%, 
+      #1a1a1a 15%, 
+      #2d1810 25%, 
+      #1a1a1a 35%, 
+      #2a2520 45%, 
+      #1a1a1a 55%, 
+      #252525 65%, 
+      #1a1a1a 75%, 
+      #2d1810 85%, 
+      #0f0f0f 100%
+    );
+    background-size: 400% 400%;
+    animation: shimmerGradient 8s ease-in-out infinite;
+    min-height: 100vh;
   }
   
   * {
@@ -16,17 +31,83 @@
   }
 }
 
+@keyframes shimmerGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+}
+
+/* Additional metallic shimmer overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(205, 127, 50, 0.03) 35%,
+    rgba(255, 215, 0, 0.05) 40%, 
+    rgba(192, 192, 192, 0.03) 45%,
+    transparent 50%,
+    rgba(205, 127, 50, 0.02) 55%,
+    rgba(255, 215, 0, 0.04) 60%,
+    rgba(192, 192, 192, 0.02) 65%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  animation: metallicShimmer 6s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes metallicShimmer {
+  0% {
+    background-position: -200% -200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+/* Ensure content is above the shimmer */
+#root {
+  position: relative;
+  z-index: 1;
+}
+
 @layer components {
   .btn-primary {
-    @apply bg-crypto-gold hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    @apply bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 text-black font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background-size: 200% 200%;
+    animation: goldShimmer 3s ease-in-out infinite;
   }
   
   .btn-secondary {
-    @apply bg-transparent border-2 border-crypto-gold text-crypto-gold hover:bg-crypto-gold hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105;
+    @apply bg-transparent border-2 border-gradient-to-r from-yellow-600 to-yellow-400 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-400 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105;
+    border-image: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0) 1;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 text-black;
   }
   
   .glow-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-crypto-gold via-crypto-orange to-crypto-pink;
+    @apply text-transparent bg-clip-text;
+    background: linear-gradient(45deg, #CD7F32, #FFD700, #C0C0C0, #FFD700, #CD7F32);
+    background-size: 300% 300%;
+    animation: metallicGlow 4s ease-in-out infinite;
   }
   
   .container-custom {
@@ -35,5 +116,26 @@
   
   .section-padding {
     @apply py-16 md:py-24 lg:py-32;
+  }
+}
+
+@keyframes goldShimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes metallicGlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  33% {
+    background-position: 100% 50%;
+  }
+  66% {
+    background-position: 50% 100%;
   }
 }
