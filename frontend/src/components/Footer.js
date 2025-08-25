@@ -76,7 +76,7 @@ const Footer = () => {
                 href={config.links.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-full"
+                className="text-gray-400 hover:text-crypto-gold transition-colors p-2 bg-gray-800 hover:bg-gray-700 rounded-xl"
                 title="Twitter/X"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
