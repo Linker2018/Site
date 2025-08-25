@@ -23,9 +23,9 @@ async def health_check():
 @app.get("/api/token-info")
 async def get_token_info():
     return {
-        "name": "PULS Token",
+        "name": "Pulsar Finance",
         "symbol": "$PULS",
-        "description": "The original tutorial token, now on mainnet!",
+        "description": "A promising Web3 project combining tokenized economics and NFT technologies with innovative staking via Telegram bot.",
         "contract_address": "0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3"
     }
 
