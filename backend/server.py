@@ -31,7 +31,7 @@ async def get_token_info():
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to $PULS Token API"}
+    return {"message": "Welcome to Pulsar Finance API"}
 
 if __name__ == "__main__":
     import uvicorn
